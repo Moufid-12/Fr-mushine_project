@@ -59,6 +59,10 @@
 	padding: 0;
 	z-index: 1;
 }
+.slider-menu li a{
+	text-decoration: none;
+    color: white;
+}
 .slider-menu > li {
 	display: inline-flex;
 	padding: 14px;
@@ -186,3 +190,10 @@
                 }
             }
             }
+
+            .deneb_footer .widget_wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 70px;
+}
