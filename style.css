@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Parisienne|Quicksand&display=swap');
+ body {
+	margin: 0;
+	background-image: linear-gradient(to bottom right, rgb(235, 76, 171), rgb(227, 77, 171), rgb(218, 78, 170), rgb(210, 80, 170), rgb(202, 81, 170), rgb(193, 82, 170), rgb(185, 83, 169), rgb(176, 84, 169), rgb(168, 85, 169), rgb(160, 87, 169), rgb(151, 88, 168), rgb(143, 89, 168));
+}
+.container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: #fff;
+}
+.lead { font-family: 'Quicksand'; }
+.look-hed {
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.header-bar {
+	position: relative;
+	width: 50%;
+	min-width: 300px;
+	height: 50px;
+	border: 10px solid transparent;
+	border-top: 10px solid #fffa;
+	border-left: 10px solid #fffa;
+	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25) inset;
+}
+.header-bar::after {
+	content: '';
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 30%;
+	height: 49px;
+	border: 10px solid transparent;
+	border-bottom: 10px solid #fffa;
+	border-right: 10px solid #fffa;
+	transition: 0.3s linear all;
+}
+.header-bar > .logo {
+	position: absolute;
+	top: calc(50% - 20px);
+	left: 10px;
+	transform: translateY(-50%);
+	color: #fffc;
+	font-family: 'Parisienne', cursive;
+	cursor: default;
+	user-select: none;
+}
+.slider-menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+.slider-menu li a{
+	text-decoration: none;
+    color: white;
+}
+.slider-menu > li {
+	display: inline-flex;
+	padding: 14px;
+	margin-left: 2px;
+	font-family: 'Quicksand', sans-serif;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.3s linear all;
+	user-select: none;
+}
+.slider-menu > li:hover {
+	color: #faa;
+	box-shadow: 0 50px 5px rgba(0, 0, 0, 0.15) inset;
+}
+.aeu-signature {
+	position: fixed;
+	top: 5px;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 15px;
+	line-height: 30px;
+	background-color: #fff;
+	padding: 5px 10px;
+	border-radius: 25px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.aeu-signature { font-family: "Quicksand"; }
+.aeu-signature > img { height: 30px; }
+
+            .lookbook-gallery .a11y-only {
+                border: 0;
+                clip: rect(0 0 0 0);
+                height: 1px;
+                margin: -1px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                width: 1px;
+            }
+            .lookbook-gallery .a11y-only.focusable:active, .lookbook-gallery .a11y-only.focusable:focus {
+                clip: auto;
+                height: auto;
+                margin: 0;
+                overflow: visible;
+                position: static;
+                width: auto;
+            }
+            .lookbook-gallery img {
+                min-width: 10em;
+                max-width: 100%;
+                display: block;
+                background: #ddd;
+            }
+            .lookbook-gallery .model {
+                margin: 0;
+                position: relative;
+            }
+            .lookbook-gallery .model .model--caption {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0;
+                background-color: rgba(0, 0, 0, .85);
+                padding: 0.35em 1.2em 0.25em 0.9em;
+                justify-self: start;
+            }
+            .lookbook-gallery .model .model--caption .model-hed {
+                font-size: 1.25em;
+                margin: 0.5em 0;
+                font-family: Lora, serif;
+                color: #fff;
+            }
+            .lookbook-gallery .model .model--caption .model-hed a {
+                color: #fff;
+                text-decoration-color: rgba(255, 255, 255, .5);
+            }
+            .lookbook-gallery .model .model--caption p {
+                font-size: 0.9375em;
+                font-family: "Open Sans", sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                color: #fff;
+                line-height: 1.5;
+                margin: 0 0 0.5em 0;
+            }
+            .lookbook-gallery .model .model--caption button{
+                padding: 3% 13%;
+                border-radius: 5px;
+                font-weight: bold;
+                background-color: aquamarine;
+                border: none;
+            }
+            .lookbook-gallery .model .model--caption button .link{
+               text-decoration: none;
+               color: black;
+            }
+            @media (min-width: 45em) {
+                .lookbook-gallery .lookbook-grid {
+                    display: flex;
+                    flex-wrap: wrap;
+            }
+                .lookbook-gallery .model {
+                    flex: 47.5%;
+                    margin: 0.5%;
+            }
+            }
+            @media (min-width: 65em) {
+                .lookbook-gallery .model {
+                    flex: 24.25% 0;
+                    margin: 0.25%;
+            }
+                @supports ( display: grid ) {
+                    .lookbook-gallery .lookbook-grid {
+                        display: grid;
+                        grid-gap: 0.5em;
+                        grid-template-columns: repeat(4, minmax(200px, 1fr));
+                }
+                    .lookbook-gallery .model {
+                        margin: 0;
+                }
+                    .lookbook-gallery .model:nth-of-type(4n-1) {
+                        grid-row-end: span 2;
+                        grid-column-end: span 2;
+                }
+            }
+            }
+
+            .deneb_footer .widget_wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 70px;
+}
