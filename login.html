@@ -10,20 +10,15 @@
 <body>
     <div class="container mt-5">
         <div class="row d-flex justify-content-center">
+            <h1 class="row d-flex justify-content-center" style="color: white;">Yönetici girişi</h1>
             <div class="col-md-6">
                 <div class="card px-5 py-5" id="form1">
                     <div class="form-data" v-if="!submitted">
-                        <div class="forms-inputs mb-4"> <span>Ad Soyad</span> <input autocomplete="off" type="text" v-model="name" v-bind:class="{'form-control':true, 'is-invalid' : !validname(email) && nameBlured}" v-on:blur="nameBlured = true">
-                            <div class="invalid-feedback">Geçerli bir ad girin!</div>
-                        </div>
                         <div class="forms-inputs mb-4"> <span>E-posta adresi</span> <input autocomplete="off" type="text" v-model="email" v-bind:class="{'form-control':true, 'is-invalid' : !validEmail(email) && emailBlured}" v-on:blur="emailBlured = true">
                             <div class="invalid-feedback">Geçersiz e-posta adresi</div>
                         </div>
                         <div class="forms-inputs mb-4"> <span>Şifre</span> <input autocomplete="off" type="password" v-model="password" v-bind:class="{'form-control':true, 'is-invalid' : !validPassword(password) && passwordBlured}" v-on:blur="passwordBlured = true">
                             <div class="invalid-feedback">Şifre 8 karakter uzunluğunda olmalıdır!</div>
-                        </div>
-                        <div class="forms-inputs mb-4"> <span>Şifre onayı</span> <input autocomplete="off" type="password" v-model="password" v-bind:class="{'form-control':true, 'is-invalid' : !validPassword(password) && passwordBlured}" v-on:blur="passwordBlured = true">
-                            <div class="invalid-feedback">Parola eşleşmiyor!</div>
                         </div>
                         <div class="mb-3"> <button v-on:click.stop.prevent="submit" class="btn btn-dark w-100">Kayıt olmak</button> </div>
                     </div>
@@ -35,7 +30,7 @@
         </div>
     </div>
     <style>
-        body{background: rgb(235, 76, 171)}.card{border: none;height: 420px}.forms-inputs{position: relative}.forms-inputs span{position: absolute;top:-18px;left: 10px;background-color: #fff;padding: 5px 10px;font-size: 15px}.forms-inputs input{height: 50px;border: 2px solid #eee}.forms-inputs input:focus{box-shadow: none;outline: none;border: 2px solid #000}.btn{height: 50px}.success-data{display: flex;flex-direction: column}.bxs-badge-check{font-size: 90px}
+        body{background: rgb(235, 76, 171)}.card{border: none;height: 320px}.forms-inputs{position: relative}.forms-inputs span{position: absolute;top:-18px;left: 10px;background-color: #fff;padding: 5px 10px;font-size: 15px}.forms-inputs input{height: 50px;border: 2px solid #eee}.forms-inputs input:focus{box-shadow: none;outline: none;border: 2px solid #000}.btn{height: 50px}.success-data{display: flex;flex-direction: column}.bxs-badge-check{font-size: 90px}
     </style>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
