@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="admin.css">
+    <title>Admin page</title>
+</head>
+<body>
+    <div id="viewport">
+        <!-- Sidebar -->
+        <div id="sidebar">
+          <header>
+            <a href="#">E-Shop Yöneticisi</a>
+          </header>
+          <ul class="nav">
+            <li>
+              <a href="admin.html">
+                <i class="zmdi zmdi-view-dashboard"></i> Gösterge Paneli
+              </a>
+            </li>
+            <li>
+              <a href="comptes.html">
+                <i class="zmdi zmdi-link"></i> Hesaplar
+              </a>
+            </li>
+            <li>
+              <a href="categories.html">
+                <i class="zmdi zmdi-widgets"></i> Kategoriler
+              </a>
+            </li>
+            <li>
+              <a href="produits.html">
+                <i class="zmdi zmdi-calendar"></i> Ürünler
+              </a>
+            </li>
+            <!-- <li>
+              <a href="#">
+                <i class="zmdi zmdi-info-outline"></i> About
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="zmdi zmdi-settings"></i> Services
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="zmdi zmdi-comment-more"></i> Contact
+              </a>
+            </li> -->
+          </ul>
+        </div>
+        <!-- Content -->
+        <div id="content">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="#"><i class="zmdi zmdi-notifications text-danger"></i>
+                  </a>
+                </li>
+                <li><a href="#">Admin</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="container-fluid">
+            <h1>E-Shop Yönetici sayfasına hoş geldiniz</h1>
+            <div class="container">
+                
+                <div class="row">
+                    
+                    <div class="col-md-offset-1 col-md-10">
+                        <h3>Liste des catégories</h3>
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-sm-12 col-xs-12">
+                                        <a href="add.html" class="btn btn-sm btn-primary pull-left"><i class="fa fa-plus-circle"></i> Ajouter</a>
+                                        <!-- <form class="form-horizontal pull-right">
+                                            <div class="form-group">
+                                                <label>Affiche : </label>
+                                                <select class="form-control">
+                                                    <option>5</option>
+                                                    <option>10</option>
+                                                    <option>15</option>
+                                                    <option>20</option>
+                                                </select>
+                                            </div>
+                                        </form> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Action</th>
+                                            <th>#</th>
+                                            <th>Nom catégorie</th>
+                                            <th>Nombre de produits</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <ul class="action-list">
+                                                    
+                                                    <li><a href="#" class="btn btn-danger"><i class="fa fa-times"></i></a></li>
+                                                </ul>
+                                            </td>
+                                            <td>1</td>
+                                            <td>Basketbol</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="action-list">
+                                                    
+                                                    <li><a href="#" class="btn btn-danger"><i class="fa fa-times"></i></a></li>
+                                                </ul>
+                                            </td>
+                                            <td>2</td>
+                                            <td>Altın-Siyah Ayakkabı</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="action-list">
+                                                    
+                                                    <li><a href="#" class="btn btn-danger"><i class="fa fa-times"></i></a></li>
+                                                </ul>
+                                            </td>
+                                            <td>3</td>
+                                            <td>Kapalı ayakkabı Altın</td>
+                                            <td>0</td>
+                                        </tr>
+                                      
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-6">Affiche <b>3</b> de <b>03</b> entités</div>
+                                    <div class="col-sm-6 col-xs-6">
+                                        <ul class="pagination hidden-xs pull-right">
+                                            <li><a href="#">«</a></li>
+                                            <li class="active"><a href="#">1</a></li>
+                                            <li><a href="#">»</a></li>
+                                        </ul>
+                                        <ul class="pagination visible-xs pull-right">
+                                            <li><a href="#">«</a></li>
+                                            <li><a href="#">»</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+   
+            </style>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

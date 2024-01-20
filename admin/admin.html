@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="admin.css">
+    <title>Admin page</title>
+</head>
+<body>
+    <div id="viewport">
+        <!-- Sidebar -->
+        <div id="sidebar">
+          <header>
+            <a href="#">E-Shop Yöneticisi</a>
+          </header>
+          <ul class="nav">
+            <li>
+              <a href="admin.html">
+                <i class="zmdi zmdi-view-dashboard"></i> Gösterge Paneli
+              </a>
+            </li>
+            <li>
+              <a href="comptes.html">
+                <i class="zmdi zmdi-link"></i> Hesaplar
+              </a>
+            </li>
+            <li>
+              <a href="categories.html">
+                <i class="zmdi zmdi-widgets"></i> Kategoriler
+              </a>
+            </li>
+            <li>
+              <a href="produits.html">
+                <i class="zmdi zmdi-calendar"></i> Ürünler
+              </a>
+            </li>
+            <!-- <li>
+              <a href="#">
+                <i class="zmdi zmdi-info-outline"></i> About
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="zmdi zmdi-settings"></i> Services
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="zmdi zmdi-comment-more"></i> Contact
+              </a>
+            </li> -->
+          </ul>
+        </div>
+        <!-- Content -->
+        <div id="content">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="#"><i class="zmdi zmdi-notifications text-danger"></i>
+                  </a>
+                </li>
+                <li><a href="#">Admin</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="container-fluid">
+            <h1>E-Shop Yönetici sayfasına hoş geldiniz</h1>
+            <div class="container" style="margin-top: 10rem;">
+                <div class="row">
+                <div class="col-md-3">
+                  <div class="card-counter primary">
+                    <i class="fa fa-code-fork"></i>
+                    <span class="count-numbers">12</span>
+                    <span class="count-name">Akışz</span>
+                  </div>
+                </div>
+            
+                <div class="col-md-3">
+                  <div class="card-counter danger">
+                    <i class="fa fa-ticket"></i>
+                    <span class="count-numbers">59</span>
+                    <span class="count-name">Örnekler</span>
+                  </div>
+                </div>
+            
+                <div class="col-md-3">
+                  <div class="card-counter success">
+                    <i class="fa fa-database"></i>
+                    <span class="count-numbers">175</span>
+                    <span class="count-name">Veri</span>
+                  </div>
+                </div>
+            
+                <div class="col-md-3">
+                  <div class="card-counter info">
+                    <i class="fa fa-users"></i>
+                    <span class="count-numbers">5</span>
+                    <span class="count-name">Kullanıcılar</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+           <div class="container"style="margin-top: 10rem;">
+            <h3>Aktif kullanıcılar</h3>
+            <div class="row">
+                <div class="col-md-10">
+                    <table class="table mt-5">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Ad Soyad</th>
+                            <th scope="col">E-posta</th>
+                            <th scope="col">Kayıt Tarihi</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mfid DAOUD</td>
+                            <td>mfiddaoud771@gmail.com</td>
+                            <td>19/01/2024</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Jacob@gmail.com</td>
+                            <td>20/01/2024</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>Larry@gmail.com</td>
+                            <td>20/01/2024</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            <button class="btn btn-primary" style="background-color:rgb(235, 76, 171) ; border-color: rgb(235, 76, 171)">Daha fazla gör </button>
+
+           </div>
+          </div>
+        </div>
+      </div>
+      <style>
+     
+.card-counter{
+    box-shadow: 2px 2px 10px #DADADA;
+    margin: 5px;
+    padding: 20px 10px;
+    background-color: #fff;
+    height: 100px;
+    border-radius: 5px;
+    transition: .3s linear all;
+  }
+
+  .card-counter:hover{
+    box-shadow: 4px 4px 20px #DADADA;
+    transition: .3s linear all;
+  }
+
+  .card-counter.primary{
+    background-color: #007bff;
+    color: #FFF;
+  }
+
+  .card-counter.danger{
+    background-color: #ef5350;
+    color: #FFF;
+  }  
+
+  .card-counter.success{
+    background-color: #66bb6a;
+    color: #FFF;
+  }  
+
+  .card-counter.info{
+    background-color: #26c6da;
+    color: #FFF;
+  }  
+
+  .card-counter i{
+    font-size: 5em;
+    opacity: 0.2;
+  }
+
+  .card-counter .count-numbers{
+    position: absolute;
+    right: 35px;
+    top: 20px;
+    font-size: 32px;
+    display: block;
+  }
+
+  .card-counter .count-name{
+    position: absolute;
+    right: 35px;
+    top: 65px;
+    font-style: italic;
+    text-transform: capitalize;
+    opacity: 0.5;
+    display: block;
+    font-size: 18px;
+  }
+      </style>
+</body>
+</html>

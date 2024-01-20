@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="admin.css">
+    <title>Admin page</title>
+</head>
+<body>
+    <div id="viewport">
+        <!-- Sidebar -->
+        <div id="sidebar">
+          <header>
+            <a href="#">E-Shop Yöneticisi</a>
+          </header>
+          <ul class="nav">
+            <li>
+              <a href="admin.html">
+                <i class="zmdi zmdi-view-dashboard"></i> Gösterge Paneli
+              </a>
+            </li>
+            <li>
+              <a href="comptes.html">
+                <i class="zmdi zmdi-link"></i> Hesaplar
+              </a>
+            </li>
+            <li>
+              <a href="categories.html">
+                <i class="zmdi zmdi-widgets"></i> Kategoriler
+              </a>
+            </li>
+            <li>
+              <a href="produits.html">
+                <i class="zmdi zmdi-calendar"></i> Ürünler
+              </a>
+            </li>
+            <!-- <li>
+              <a href="#">
+                <i class="zmdi zmdi-info-outline"></i> About
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="zmdi zmdi-settings"></i> Services
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="zmdi zmdi-comment-more"></i> Contact
+              </a>
+            </li> -->
+          </ul>
+        </div>
+        <!-- Content -->
+        <div id="content">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="#"><i class="zmdi zmdi-notifications text-danger"></i>
+                  </a>
+                </li>
+                <li><a href="#">Admin</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="container-fluid">
+            <h1>E-Shop Yönetici sayfasına hoş geldiniz</h1>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9">
+                  <h3>Ajouter catégorie</h3>
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Nom catégorie</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Catégorie">
+                    </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Accepter ajouter plusieurs produits</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="background-color: rgb(235, 76, 171); border: none;">Enregistrer</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+     
+
+      </style>
+</body>
+</html>
